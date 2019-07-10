@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AdminActivity">
+
+
+
+    <Button
+        android:id="@+id/Manage_Map"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyleithgradien"
+        android:text="Manage Map"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/all_Uesrs"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="All Users"
+        android:background="@drawable/buttonstyleithgradien"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+
+        />
+    <Button
+        android:id="@+id/All_complains"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text=" All complains"
+        android:background="@drawable/buttonstyleithgradien"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+
+        />
+    <Button
+        android:id="@+id/logout_admin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyleithgradien"
+        android:text="Logout"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

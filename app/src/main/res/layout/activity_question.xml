@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <include
+        android:id="@+id/update_question_toolbar"
+        layout="@layout/app_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/update_question_toolbar">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#FFCF40"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Golden_user_pp"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/Golden_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:padding="5dp"
+                android:text="Golden"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#B5B7BB">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Silver_user_pp"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/Silver_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:padding="5dp"
+                android:text="Golden"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#cd7f32"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Bronze_user_pp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/Bronze_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:padding="5dp"
+                android:text="Golden"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ask_question_content"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="183dp"
+        android:ems="10"
+        android:hint="Ask about your category ...!?"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/ask_question_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="267dp"
+        android:background="@drawable/inputs"
+        android:text="Ask"
+        android:textColor="@color/primaryText"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="329dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_users_category_questions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/nav_profile_img"-->
+    <!--android:layout_width="145dp"-->
+    <!--android:layout_height="129dp"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginStart="80dp"-->
+    <!--android:layout_marginLeft="80dp"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:src="@drawable/profile_icon"-->
+    <!--app:civ_border_color="@color/colorPrimary"-->
+    <!--app:civ_border_width="2dp" />-->
+
+
+</RelativeLayout>

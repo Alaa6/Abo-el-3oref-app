@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditQuestionCommentActivity">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonstyleithgradien"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionComment_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:padding="3dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/Question_comments_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textColor="#000"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="100"-->
+        <!--android:layout_marginLeft="15dp"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Comment"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#000"/>-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/Question_comments_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="add new comment"-->
+        <!--android:textColor="#398075"-->
+        <!--android:textSize="13sp" />-->
+
+        <!--<ImageButton-->
+
+        <!--android:id="@+id/comments_icon_btn"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/ic_commenticon" />-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_save_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/root"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputs"
+        android:text="Save Comment"
+        android:textColor="@color/primaryText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Button_edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Button_save_comment"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputs"
+        android:text="Edit Comment"
+        android:textColor="@color/primaryText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Button_delete_comment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Button_edit_comment"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputs"
+        android:text="Delete Comment"
+        android:textColor="@color/primaryText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

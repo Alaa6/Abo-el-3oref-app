@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="15dp"
+        tools:context=".ClickPostActivity">
+
+        <ImageView
+            android:id="@+id/post_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="264dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/post_img"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="226dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/buttonstyleithgradien"
+            android:text="Edit"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="264dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/btn_edit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/buttonstyleithgradien"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_complain"
+            android:layout_width="264dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/btn_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/buttonstyleithgradien"
+            android:text="Complain"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_img"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:padding="10dp"
+            android:maxLines="4"
+            android:lines="4"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</ScrollView>
